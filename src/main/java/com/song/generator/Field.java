@@ -101,6 +101,9 @@ DATALINK            java.net.URL[color=red][/color]
         if (javaType.equals("BLOB")) {
             return "BLOB";
         }
+        if (javaType.equals("TINYINT")) {
+        	return "TINYINT";
+        }
         throw new RuntimeException("please implenents java type: " + javaType
                 + "'s java type mapping!");
     }
